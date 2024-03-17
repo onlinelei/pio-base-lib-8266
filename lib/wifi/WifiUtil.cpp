@@ -5,10 +5,10 @@
 #include "WifiUtil.h"
 #include <ESP8266WiFi.h>
 
-//const char *ssid = "Redmi_016C";
-//const char *password = "87654321";
-const char *ssid = "Mi";
-const char *password = "12345678";
+const char *ssid = "Redmi_016C";
+const char *password = "87654321";
+// const char *ssid = "Mi";
+// const char *password = "12345678";
 
 void WifiUtil::wifiInit() {
     WiFi.mode(WIFI_STA);

@@ -1,25 +1,18 @@
 #include <Arduino.h>
-#include <BlinkUtil.h>
 #include <InitUtil.h>
-#include <WifiUtil.h>
-#include <OTAUtil.h>
-#include <MyTFTUtils.h>
+#include <BlinkUtil.h>
 
-void setup() {
-    // InitUtil::init();
-    // WifiUtil::wifiInit();
-    // OTAUtil::OTAInitLocalNet();
-    // BlinkUtil::init(testLedArray);
-//    MyTFTUtils::tftInit();
+void setup()
+{
+    InitUtil::init();
 }
 
-void loop() {
-   Serial.println("something you todo");
+void loop()
+{
+    Serial.println("something you todo");
+    BlinkUtil::blink(testLedArray);
+    BlinkUtil::blink(boardLed8266Array);
 
-    // OTAUtil::OTAHandler();
-    // BlinkUtil::blink(testLedArray);
-//    MyTFTUtils::tftTest();
-//    MyTFTUtils::testFont();
-Serial.println("led blink");
+    Serial.println("led blink");
     delay(1000);
 }
